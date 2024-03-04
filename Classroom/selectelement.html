@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div>
+        Choose your profession
+        <select name="profession" id="profession">
+            <option>Select your option</option>
+            <option value="stu">Student</option>
+            <option value="dev">Developer</option>
+        </select>
+    </div>
+    <div>
+        <label for="vol">Select your volume : </label>
+        <input type="range" id="vol" min="0" max="100" name="volume" step="05">
+    </div>
+    <br>
+    <label for="feedback">Please give your valuable feedback : </label>
+    <textarea id="feedback" name="feedback" placeholder="write your feedback here"></textarea>
+    <hr>
+    <form action="/server">
+<h1>Registration Form</h1>
+<div>
+    <input type="text" placeholder="First name" name="fname">
+    <input type="text" placeholder="Last name" name="lname">
+</div>
+<div>
+    <label for="gender">Please select gender</label>
+    <select name="gender" id="gender">
+        <option value="m">Male</option>
+        <option value="f">Female</option>
+        <option value="o">Others</option>
+    </select>
+</div>
+<div>
+    Do you agree to all terms of service? 
+    <input type="checkbox" id="tos_agree" name="tos_agree" checked>
+    <label for="tos_agree">Yes, I agree</label>
+</div>
+<button>Register</button>
+    </form>
+</body>
+</html>
